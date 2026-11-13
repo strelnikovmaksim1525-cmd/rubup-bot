@@ -63,7 +63,7 @@ async def paid_balance_callback(update: Update, context: ContextTypes.DEFAULT_TY
         return
     users[uid] = "waiting_for_photo"
     waiting_for_photo.add(uid)
-    await query.edit_message_text("Вы зарегистрировались! Теперь отправьте скриншот вашего профиля RubUp (где видно баланс и имя):")
+    await query.edit_message_text("Вы зарегистрировались! Теперь активируйте наш промокод NSPR23 на RubUp.\n\nПосле активации отправьте скриншот вашего аккаунта, где виден ваш баланс и активированный промокод:")
 
 async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
